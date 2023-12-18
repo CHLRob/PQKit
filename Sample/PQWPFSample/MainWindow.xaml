@@ -1,0 +1,55 @@
+﻿<Window x:Class="Machine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wf ="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        Title="PQKit WPF示例" Height="818" Width="1522" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Closed="Window_Closed" Closing="Window_Closing" ResizeMode="NoResize">
+	<Grid Background="Transparent" >
+		<WindowsFormsHost Width="968" Height="769" Background="#FFE1E7ED"  HorizontalAlignment="Left" Name="WindowsFormsHostDisplay" VerticalAlignment="Top"  AllowDrop="False" Margin="220,10,0,0"  >
+			<wf:Panel x:Name="DesignPanel"   Location="0,0"  Width="1152" Height="768"    />
+		</WindowsFormsHost>
+		<WindowsFormsHost Width="320" Height="382" Background="#FFE1E7ED"  HorizontalAlignment="Left" x:Name="WindowsFormsHostDisplay_Copy" VerticalAlignment="Top"  AllowDrop="False" Margin="1193,10,0,0"  >
+			<wf:Panel x:Name="ModelTreePanel"   Location="0,0"    />
+		</WindowsFormsHost>
+		<WindowsFormsHost Width="320" Height="382" Background="#FFE1E7ED"  HorizontalAlignment="Left" x:Name="WindowsFormsHostDisplay_Copy1" VerticalAlignment="Top"  AllowDrop="False" Margin="1193,397,0,0"  >
+			<wf:Panel x:Name="DebugTreePanel"   Location="0,0"    />
+		</WindowsFormsHost>
+		<GroupBox x:Name="groupBoxC" Header="命令交互" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="316" Width="100"/>
+        <Button x:Name="buttonOpenFile" Content="打开文件" Background="White" HorizontalAlignment="Left" Margin="18,38,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonOpenFile_Click"/>
+		<Button x:Name="buttonSaveFile" Content="保存文件" Background="White" HorizontalAlignment="Left" Margin="18,69,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonSaveFile_Click"/>
+		<Button x:Name="buttonImport3DFile" Content="导入3D文件" Background="White" HorizontalAlignment="Left" Margin="18,100,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonImport3DFile_Click"/>
+		<Button x:Name="buttonGeneratePath" Content="生成轨迹" Background="White" HorizontalAlignment="Left" Margin="18,131,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonGeneratePath_Click"/>
+		<Button x:Name="buttonCompile" Content="编译" Background="White" HorizontalAlignment="Left" Margin="18,162,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonCompile_Click"/>
+		<Button x:Name="buttonSimulate" Content="仿真" Background="White" HorizontalAlignment="Left" Margin="18,193,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonSimulate_Click"/>
+		<Button x:Name="buttonPost" Content="后置" Background="White" HorizontalAlignment="Left" Margin="18,224,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonPost_Click"/>
+		<Button x:Name="buttonCollision" Content="碰撞检测" Background="White" HorizontalAlignment="Left" Margin="18,255,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonCollision_Click"/>
+		<GroupBox x:Name="groupBoxD" Header="数据交互" HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Height="316" Width="100"/>
+		<Button x:Name="buttonRobot" Content="GetRobots" Background="White" HorizontalAlignment="Left" Margin="124,38,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonRobot_Click"/>
+		<Button x:Name="buttonTool" Content="GetTools" Background="White" HorizontalAlignment="Left" Margin="124,69,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonTool_Click"/>
+		<Button x:Name="buttonJoint" Content="GetJoints" Background="White" HorizontalAlignment="Left" Margin="124,100,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonJoint_Click"/>
+		<Button x:Name="buttonLink" Content="GetLinks" Background="White" HorizontalAlignment="Left" Margin="124,131,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonLink_Click"/>
+		<Button x:Name="buttonVel" Content="GetVelocity" Background="White" HorizontalAlignment="Left" Margin="124,162,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonVel_Click"/>
+		<Button x:Name="buttonTCP" Content="GetTCP" Background="White" HorizontalAlignment="Left" Margin="124,193,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonTCP_Click"/>
+		<Button x:Name="buttonEndPos" Content="GetEndPos" Background="White" HorizontalAlignment="Left" Margin="124,224,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonEndPos_Click"/>
+		<Button x:Name="buttonName" Content="GetName" Background="White" HorizontalAlignment="Left" Margin="124,255,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonName_Click"/>
+		<Button x:Name="buttonPos" Content="GetPosture" Background="White" HorizontalAlignment="Left" Margin="124,286,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonPos_Click"/>
+		<GroupBox x:Name="groupBoxP" Header="轨迹点" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" Height="448" Width="205"/>
+		<Label x:Name="labelP" Content="输入轨迹点位姿：" HorizontalAlignment="Left" Margin="24,361,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="labelX" Content="X:" HorizontalAlignment="Left" Margin="24,391,0,0" VerticalAlignment="Top" Width="22"/>
+		<TextBox x:Name="textBoxX" HorizontalAlignment="Left" Height="23" Margin="50,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+		<Label x:Name="labelY" Content="Y:" HorizontalAlignment="Left" Margin="24,421,0,0" VerticalAlignment="Top" Width="22"/>
+		<TextBox x:Name="textBoxY" HorizontalAlignment="Left" Height="23" Margin="50,423,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+		<Label x:Name="labelZ" Content="Z:" HorizontalAlignment="Left" Margin="24,451,0,0" VerticalAlignment="Top" Width="22"/>
+		<TextBox x:Name="textBoxZ" HorizontalAlignment="Left" Height="23" Margin="50,453,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+		<Label x:Name="labelA" Content="A:" HorizontalAlignment="Left" Margin="24,481,0,0" VerticalAlignment="Top" Width="22"/>
+		<TextBox x:Name="textBoxA" HorizontalAlignment="Left" Height="23" Margin="50,483,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+		<Label x:Name="labelB" Content="B:" HorizontalAlignment="Left" Margin="24,511,0,0" VerticalAlignment="Top" Width="22"/>
+		<TextBox x:Name="textBoxB" HorizontalAlignment="Left" Height="23" Margin="50,513,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+		<Label x:Name="labelC" Content="C:" HorizontalAlignment="Left" Margin="24,541,0,0" VerticalAlignment="Top" Width="22"/>
+		<TextBox x:Name="textBoxC" HorizontalAlignment="Left" Height="23" Margin="50,543,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+		<Label x:Name="labelPT" Content="输入轨迹点位姿类型：" HorizontalAlignment="Left" Margin="24,571,0,0" VerticalAlignment="Top"/>
+		<ComboBox x:Name="comboBoxPosType" Background="White" HorizontalAlignment="Left" Height="23" Margin="24,601,0,0" VerticalAlignment="Top" Width="173"/>
+		<Button x:Name="buttonInsertPt" Content="导入轨迹点" Background="White" HorizontalAlignment="Left" Margin="24,631,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonInsertPt_Click"/>
+		<Button x:Name="buttonModifyPt" Content="修改轨迹点" Background="White" HorizontalAlignment="Left" Margin="115,631,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonModifyPt_Click"/>
+		<Button x:Name="buttonKinematics" Content="运动学算法" Background="White" HorizontalAlignment="Left" Margin="24,661,0,0" VerticalAlignment="Top" Width="82" Height="26" Click="buttonKinematics_Click"/>
+	</Grid>
+</Window>

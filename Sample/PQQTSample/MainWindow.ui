@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pbOpenFile">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>6</y>
+      <width>88</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开工程</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="wDebugTree" native="true">
+    <property name="geometry">
+     <rect>
+      <x>102</x>
+      <y>392</y>
+      <width>320</width>
+      <height>385</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>320</width>
+      <height>380</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="wModelTree" native="true">
+    <property name="geometry">
+     <rect>
+      <x>102</x>
+      <y>6</y>
+      <width>320</width>
+      <height>385</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>320</width>
+      <height>380</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="wMainView" native="true">
+    <property name="geometry">
+     <rect>
+      <x>424</x>
+      <y>6</y>
+      <width>846</width>
+      <height>770</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>840</width>
+      <height>764</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbSaveAs">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>40</y>
+      <width>88</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>另存工程</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbArcBall">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>74</y>
+      <width>88</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>三维球</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>146</y>
+      <width>96</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>轨迹点</string>
+    </property>
+    <widget class="QPushButton" name="pbInsertPoint">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>180</y>
+       <width>88</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>插入轨迹点</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>30</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPtX">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>25</y>
+       <width>68</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPtY">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>68</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>55</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPtZ">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>75</y>
+       <width>68</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>80</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Z:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPtC">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>68</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPtA">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>68</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPtB">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>125</y>
+       <width>68</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>105</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>A:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>130</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>B:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>155</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>C:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pbDesignRobot">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>108</y>
+      <width>88</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>定义机构</string>
+    </property>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>pbOpenFile</zorder>
+   <zorder>wDebugTree</zorder>
+   <zorder>wModelTree</zorder>
+   <zorder>wMainView</zorder>
+   <zorder>pbSaveAs</zorder>
+   <zorder>pbArcBall</zorder>
+   <zorder>pbDesignRobot</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>pbSaveAs</tabstop>
+  <tabstop>pbArcBall</tabstop>
+  <tabstop>lineEditPtX</tabstop>
+  <tabstop>lineEditPtY</tabstop>
+  <tabstop>lineEditPtZ</tabstop>
+  <tabstop>lineEditPtA</tabstop>
+  <tabstop>lineEditPtB</tabstop>
+  <tabstop>lineEditPtC</tabstop>
+  <tabstop>pbInsertPoint</tabstop>
+  <tabstop>pbOpenFile</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
