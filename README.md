@@ -10,11 +10,11 @@ PQKit采用C++语言封装开发，跨平台，具有良好的软件兼容性。
 ## Sample
 用户可以从0开始搭建集成PQKit的应用程序，也可以将PQKit集成到现有应用程序中。
 以下是用不同开发组件集成PQKit的范例：
-- Winform
+- [WinForm](https://github.com/CHLRob/PQKit/tree/main/Sample/PQWinFormSample)
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQWinFormSample/PQKitWinForm.png "PQKit WinForm Sample")
-- WPF
+- [WPF](https://github.com/CHLRob/PQKit/tree/main/Sample/PQWPFSample)
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQWPFSample/PQKitWPF.png "PQKit WPF Sample")
 - [MFC](https://github.com/CHLRob/PQKit/tree/main/Sample/PQMFCSample)
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQMFCSample/PQKitMFC.png "PQKit MFC Sample")
-- QT
+- [QT](https://github.com/CHLRob/PQKit/tree/main/Sample/PQQTSample)
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQQTSample/PQKitQT.png "PQKit QT Sample")
