@@ -18,3 +18,7 @@ PQKit采用C++语言封装开发，跨平台，具有良好的软件兼容性。
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQMFCSample/PQKitMFC.png "PQKit MFC Sample")
 - [QT](https://github.com/CHLRob/PQKit/tree/main/Sample/PQQTSample)
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQQTSample/PQKitQT.png "PQKit QT Sample")
+
+## 联系我们
+如果您有需求或者兴趣，可以通过下面邮箱随时联系我们。
+ra@robotart.com
