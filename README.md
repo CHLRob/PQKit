@@ -12,5 +12,6 @@ PQKit采用C++语言封装开发，跨平台，具有良好的软件兼容性。
 以下是用不同开发组件集成PQKit的范例：
 - Winform
 - WPF
+  ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQWPFSample/PQKitWPF.png "PQKit WPF Sample")
 - MFC
 - QT
