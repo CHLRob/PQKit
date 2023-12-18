@@ -14,7 +14,7 @@ PQKit采用C++语言封装开发，跨平台，具有良好的软件兼容性。
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQWinFormSample/PQKitWinForm.png "PQKit WinForm Sample")
 - WPF
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQWPFSample/PQKitWPF.png "PQKit WPF Sample")
-- [MFC]([URL](https://github.com/CHLRob/PQKit/tree/main/Sample/PQMFCSample))
+- [MFC](https://github.com/CHLRob/PQKit/tree/main/Sample/PQMFCSample)
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQMFCSample/PQKitMFC.png "PQKit MFC Sample")
 - QT
   ![image text](https://github.com/CHLRob/PQKit/blob/main/Sample/PQQTSample/PQKitQT.png "PQKit QT Sample")
